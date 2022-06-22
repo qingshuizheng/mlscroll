@@ -393,7 +393,8 @@ by default if `mlscroll-right-align' is non-nil), in
 
 	(if (and mlscroll-alter-percent-position
 		 ;; something is wrong here, comment it out:
-		 ;; (eq (cadar mode-line-position) 'mode-line-percent-position))
+		 ;; (eq (cadar mode-line-position) 'mode-line-percent-position)
+		 )
             (setf (aref mlscroll-saved 0) (car mode-line-position)
 		  mode-line-position
 		  (if (eq mlscroll-alter-percent-position 'replace) ; put MLScroll there!
